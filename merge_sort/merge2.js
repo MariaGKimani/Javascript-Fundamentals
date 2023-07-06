@@ -32,29 +32,9 @@ console.log(sorting(arr))
 
 
 //Given an array of unsorted numbers, return the index of the following target if the target exists in the array. If the target is not found, return null
-
-function x(num){
-    if(num.length <= 1){
-        return num
+function x(arr){
+    if(arr.length <= 1){
+        return arr
     }
-    let middle =num.length/2
-    let left1 = num.slice(0,middle)
-    let right1 = num.slice(middle)
-    return y(x(left1),y(right1))
-   
+    let middle = Math.floor
 }
-function y(left1,right1){
-    const newxy =[]
-    while(left1.length && right1.length){
-        if(left1[0] <right1[0]){
-            newxy.push(left1.shift())
-        }else{
-            newxy.push(right1.shift())
-        }
-    }
-    console.log(newxy)
-    return [...newxy,...right1,...left1]
-}
-let num = [45,12,6,89,2,5]
-let target = 6
-console.log(x(num))

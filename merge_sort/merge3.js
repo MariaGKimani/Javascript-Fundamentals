@@ -1,4 +1,4 @@
-let nums = [2,7,8,9,10,13,17,19,21];
+let array = [2,7,8,9,10,13,17,19,21];
 function binarySearch(array, target){
     let left = 0
     let right = array.length-1
@@ -14,7 +14,7 @@ function binarySearch(array, target){
     }
     return false
 }
-console.log(binarySearch(nums,7));
-console.log(binarySearch(nums,15));
+console.log(binarySearch(array,target));
+// console.log(binarySearch(array,target));
 
 

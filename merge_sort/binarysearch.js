@@ -1,12 +1,12 @@
-function divide(num2,target){
+function divide(num2,targe){
     let left = 0;
     let right =num2.length-1;
 
         while(left<= right){
             let middle =Math.floor((left+right)/2)
-            if(num2[middle]===target){
+            if(num2[middle]===targe){
                 return middle
-            }else if(num2[middle]< target){
+            }else if(num2[middle]< targe){
                 left = middle +1
             }else{
                 right = middle -1
@@ -14,9 +14,9 @@ function divide(num2,target){
         }
         return null
 }
-target = 73;
+targe = 73;
 let num2 =[12,25,32,37,41,48,58,60,66,73,74,83,91,95];
-console.log(divide(num2,target))
+console.log(divide(num2,targe))
 
 
 //search for 42
@@ -101,3 +101,25 @@ function hundred(num5,target5){
 let target5 = 100
 let num5 = [1,2,3,5,8,9,12,13,14,16,27,35,38,42,67,89,90]
 console.log(hundred(num5,target5))
+
+
+
+
+function tamati(num6,target6){
+    let left6 = 0;
+    let right6 = num6.length -1
+    while(left6 <right6){
+        let middle6 = Math.floor((left6+right6)/2);
+        if(middle6===target6){
+            return middle6
+        }else if(num6[middle6]< target6){
+            left6 = middle6 + 1
+        }else{
+            right6 = middle6 - 1
+        }
+    }
+    return null
+}
+let target6 = 1
+let num6 = [1,2,3,5,8,9,12,13,14,16,27,35,38,42,67,89,90]
+console.log(tamati(num6,target6))
